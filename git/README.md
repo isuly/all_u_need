@@ -64,12 +64,3 @@ git pull - забрать изменения. является суммой git 
 </p>
 </details>
 
-###### 6. -
-
-<details><summary><b>Ответ</b></summary>
-<p>
-
-#### Ответ:
-
-</p>
-</details>
