@@ -1,2 +1,2 @@
 # all_u_need
-Questions u meet on Python interview
+Questions u can meet on Python interview
