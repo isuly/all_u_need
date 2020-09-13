@@ -13,10 +13,10 @@ PYTHON
 Замыкание (closure), это такая функция, которая ссылается на локальные переменные (использует их в своём теле) в области видимости, в котток я орой она была создана. Этим замыкание отличается от обычной функции, которая может использовать только свои аргументы и глобальные переменные.
   </p>
 def mul(a):
-        def helper(b):
-            return a * b
-        return helper
-        <p>
+  def helper(b):
+    return a * b
+  return helper
+  <p>
 <b> Local </b>
   
 Эту область видимости имеют переменные, которые создаются и используются внутри функций.
@@ -33,5 +33,46 @@ def mul(a):
 
 Уровень Python интерпретатора. В рамках этой области видимости находятся функции open, len и т.п., также туда входят исключения. Эти сущности доступны в любом модуле Python и не требуют предварительного импорта. Built-in – это максимально широкая область видимости.
 </p>
+</p>
+</details>
+
+
+###### 2. Декоратор
+
+<details><summary><b>Ответ</b></summary>
+<p>
+
+#### Ответ:
+Декораторы — это, по сути, "обёртки", которые дают нам возможность изменить поведение функции, не изменяя её код.
+Декоратор:
+
+def wraper(func):
+    def wrapper():
+        print('1')
+        func()
+        print('3')
+    return wrapper
+ 
+@wraper
+def decorated_func():
+    print('2')
+ 
+ 
+Декоратор с параметром:
+def parametr_decorator(param: str):
+    def decorator(func):
+        def new_func():
+            print('1')
+            func()
+            print('3')
+        return new_func
+    print(param)
+    return decorator
+ 
+ 
+@parametr_decorator('parametr')
+def decorated():
+    print('2')
+
 </p>
 </details>
