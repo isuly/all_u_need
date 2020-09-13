@@ -46,33 +46,33 @@ def mul(a):
 Декораторы — это, по сути, "обёртки", которые дают нам возможность изменить поведение функции, не изменяя её код.
 Декоратор:
 
-def wraper(func):
-    def wrapper():
-        print('1')
-        func()
-        print('3')
-    return wrapper
- 
-@wraper
-def decorated_func():
-    print('2')
- 
- 
-Декоратор с параметром:
-def parametr_decorator(param: str):
-    def decorator(func):
-        def new_func():
-            print('1')
-            func()
-            print('3')
-        return new_func
-    print(param)
-    return decorator
- 
- 
-@parametr_decorator('parametr')
-def decorated():
-    print('2')
+      def wraper(func):
+          def wrapper():
+              print('1')
+              func()
+              print('3')
+          return wrapper
+
+      @wraper
+      def decorated_func():
+          print('2')
+
+
+      Декоратор с параметром:
+      def parametr_decorator(param: str):
+          def decorator(func):
+              def new_func():
+                  print('1')
+                  func()
+                  print('3')
+              return new_func
+          print(param)
+          return decorator
+
+
+      @parametr_decorator('parametr')
+      def decorated():
+          print('2')
 
 </p>
 </details>
