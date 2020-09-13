@@ -50,7 +50,7 @@ Questions u can meet on Python interview
     Когда заранее неизвестно, объекты каких типов необходимо создавать
     Когда нужно управлять разными типами объектов
     Когда система должна быть независимой от процесса создания новых объектов и расширяемой: в нее можно легко вводить новые классы, объекты которых система должна создавать.
-'''
+
     abstract class Product
     {}
 
@@ -73,8 +73,8 @@ Questions u can meet on Python interview
     class ConcreteCreatorB : Creator
     {
         public override Product FactoryMethod() { return new ConcreteProductB(); }
-  }
-'''
+    }
+
 Преимущества
 
     Избавляет класс от привязки к конкретным классам продуктов.
